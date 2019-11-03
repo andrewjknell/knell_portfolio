@@ -1,5 +1,6 @@
 body{
     background-color: rgb(247, 243, 239);
+    background-repeat: none;
 }
 #footer {
     width:100%;
