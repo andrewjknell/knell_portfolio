@@ -1,4 +1,6 @@
-
+body{
+    border: #fffed6 solid 5px;
+}
 #footer {
     width:100%;
     height:20%;
@@ -11,9 +13,12 @@
     background-image: url("https://www.pacifica-montessori.com/wp-content/uploads/2018/03/footerwaves.png");
 }
 .containn{
-    background-color: rgb(250, 249, 244);
-    /* background-size: cover; */
+    background: -webkit-linear-gradient(70deg, #ffffc5fa  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
+    background: -o-linear-gradient(70deg, #ffffc5fa  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
+    background: -moz-linear-gradient(70deg, #ffffc5fa  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
+    background: linear-gradient(70deg, #ffffc5fa  30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
     min-height: 100vh;
     min-width: 100%;
-    text-align: center;
+
 }
+
