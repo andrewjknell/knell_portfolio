@@ -3,7 +3,9 @@ img{
 	border-radius: 150px;
 	margin: 1% 0 0 2%;
 	display: inline-block;
+	opacity: .7;
 }
+
 .info{
 	color: white;
 	margin-top: 2%;
@@ -14,7 +16,8 @@ img{
 img:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    transform: scale(1.2);
+	transform: scale(1.2);
+	opacity: 1;
 }
 .info h2{
 	font-size: 2.3em;
@@ -130,8 +133,9 @@ img:hover{
 	animation-iteration-count: 1;
 }
 section #services {
-	text-align: center;
+	margin-left: 20%;
 	transform: translatez(0);
+	margin-top:6%;
   }
   section #services h2 {
 	margin: 80px 0px 40px;
@@ -185,4 +189,24 @@ section #services {
 	padding: 20px;
 	max-width: 300px;
   }
+
+.containerr {
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
