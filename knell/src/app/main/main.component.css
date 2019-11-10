@@ -1,7 +1,6 @@
 .swap-on-hover {
 	position: relative;	
 	margin:  0 auto;
-
   }
   .swap-on-hover img {
 	margin:1% 0 0 1% ;
@@ -12,8 +11,11 @@
 	overflow: hidden;
 	height: 300px;
 	width: 310px;
+	margin-left: 260px;
 	}
-  
+  .containerr{
+	  min-height: 1300px;
+  }
   .swap-on-hover .swap-on-hover__front-image {
 	z-index: 9999;
 	transition: opacity .3s linear;
@@ -24,113 +26,45 @@
 	opacity: 0;
   }
 .info{
-	color: white;
-	margin-top: 2%;
-	margin-left: 1.1%;
+	color: rgb(0, 0, 0);
 	vertical-align: top;
 	display: inline-block;
 	margin-top: 310px;
+	margin-left: 56px;
+	text-align: center;
 }
 .info h2{
 	font-size: 2.3em;
 	margin-top: -12px;
+	font-family:"Arial Black", Helvetica, sans-serif;
+
 }
 .info h1{
-	font-size: 5.8em;
-    font-family:"Impact", Helvetica, sans-serif;
+	font-size: 6.3em;
+    font-family:"Arial Black", Helvetica, sans-serif;
 }
 .info h4{
+	
 	font-size: 1.6em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Arial Black", Helvetica, sans-serif;
 }
-.plist p{
+.soon{
+	margin: 15% 0 0 0;
+	text-align: center;
+}
+/* .plist p{
 	font-size: 20px;
 	font-weight: bold;
 	font-family: "Comic Sans MS", sans-serif;
-}
+} */
 .plist h4, .plist p{
 	display:inline-block;
 }
 
 .plist{
-	margin-left: 5%;
+	text-align: center;
+	/* margin-left: 25%; */
 	margin-bottom: -10px;
-}
-.icons{
-	width: 120px; 
-	position: fixed; 
-	z-index: 1;
-	top: 0; 
-	right: 0;
-	margin-right: 2%;
-	/* background-color: rgba(17, 17, 17, 0.301); */
-	overflow-x: hidden;
-	padding-top: 20px;
-	display: inline-block;
-}
-@-webkit-keyframes swing{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-       transform: translateX(-5px);
-    } 
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes swing{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 }
 .plist:hover{
 	-webkit-animation: swing 1s ease;
@@ -150,48 +84,12 @@
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
 }
-.linkedin a{
-	color: rgb(0, 89, 255);
-}
-.instagram a{
-	color: rgb(255, 74, 42);
-}
-.github a{
-	color: black;
-}
-.gmail a{
-	color: rgb(255, 255, 255);
-}
-section #services {
-	/* margin-left: 20%; */
-	transform: translatez(0);
-	/* margin-top:6%; */
-  }
-  section #services li {
-	/* width: 180px;
-	height: 180px; */
-	display:block;
-	/* margin-right:px; */
-	list-style: none;
-  }
-  section #services li div {
-	width: 70px;
-	height: 70px;
-	font-size: 3.4em;
-	text-align: center;
-	line-height: 70px;
-	background-color: rgba(255, 255, 255, 0);
-	transition: all 0.5s ease;
-  }
-  section #services li div:hover {
-	transform: rotate(360deg);
-	border-radius: 100px;
-  }
+
 .containerr {
 	margin: 0;
 	width: 100%;
 	min-height: 2000px;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #d5ffd9, #b9ecff, #b9ffe4, #b2fff5);
 	background-size: 400% 400%;
 	animation: gradientBG 15s ease infinite;
 }
@@ -209,3 +107,39 @@ section #services {
 
 
 
+@media screen and (max-width: 480px) {
+	.swap-on-hover img {
+		left: 50%;
+		margin-left: -190px;
+	}
+	.containerr{
+		min-height: 1300px;
+	}
+	.plist{
+		margin-left: 0;
+	}
+	.info{
+		margin-left: 0;
+
+	}
+	.soon{
+		margin: 0 0 0 0;
+		text-align: center;
+		font-size: 1.3em;
+	}
+	.info h2{
+		font-size: 1.2em;
+		margin-top: -12px;
+		font-family:"Arial Black", Helvetica, sans-serif;
+	
+	}
+	.info h1{
+		font-size: 2.5em;
+		font-family:"Arial Black", Helvetica, sans-serif;
+	}
+	.info h4{
+		
+		font-size: 1em;
+		font-family: "Arial Black", Helvetica, sans-serif;
+	}
+  }

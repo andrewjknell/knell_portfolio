@@ -10,6 +10,117 @@
     background-image: url("https://www.pacifica-montessori.com/wp-content/uploads/2018/03/footerwaves.png");
 }
 
+@-webkit-keyframes swing{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.linkedin a{
+	color: rgb(0, 89, 255);
+}
+.instagram a{
+	color: rgb(255, 74, 42);
+}
+.github a{
+	color: black;
+}
+.gmail a{
+	color: rgb(255, 255, 255);
+}
+.icons{
+    margin-top: 70px;
+    text-align: right;
+}
+section #services {
+	transform: translatez(0);
+  }
+  section #services li {
+	/* width: 180px;
+    height: 180px; */
+    width: 6%;
+	display:inline-block;
+	/* margin-right:px; */
+	list-style: none;
+  }
+  section #services li div {
+	width: 70px;
+	height: 70px;
+	font-size: 3.0em;
+	text-align: center;
+	line-height: 70px;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.5s ease;
+  }
+  section #services li div:hover {
+	transform: rotate(360deg);
+	border-radius: 100px;
+  }
+
+@media screen and (max-width: 480px){
+    section #services li{
+        width: 70px;
+        margin-left: 0;
+    }
+}
 
 
 
