@@ -1,52 +1,61 @@
-.swap-on-hover {
+
+/* .swap-on-hover {
 	position: relative;	
-	margin:  0 auto;
+	margin: auto;
+	max-width: 400px;
   }
   .swap-on-hover img {
-	margin:1% 0 0 1% ;
 	position: absolute;
 	top:0;
 	left:0;
+	margin-left: 60px;
 	border-radius: 150px;
 	overflow: hidden;
-	height: 300px;
-	width: 310px;
+	height: 270px;
+	width: 270px;
 	margin-left: 260px;
+	} */
+	/* .swap-on-hover .swap-on-hover__front-image {
+	  z-index: 9999;
+	  transition: opacity .3s linear;
+	  cursor: pointer;
 	}
-  .containerr{
-	  min-height: 1300px;
-  }
-  .swap-on-hover .swap-on-hover__front-image {
-	z-index: 9999;
-	transition: opacity .3s linear;
-	cursor: pointer;
-  }
-  
-  .swap-on-hover:hover > .swap-on-hover__front-image{
-	opacity: 0;
-  }
+	
+	.swap-on-hover:hover > .swap-on-hover__front-image{
+	  opacity: 0;
+	} */
+  .containerr {
+	/* text-align: center; */
+	width: 100%;
+	min-height: 1300px;
+	background: linear-gradient(-45deg, #fdfdf4, #f5f4e3, #fffff3, #feffe7);
+	/* background-size: 400% 400%; */
+	/* animation: gradientBG 15s ease infinite; */
+}
+
 .info{
 	color: rgb(0, 0, 0);
-	vertical-align: top;
+	/* width: 669px; */
 	display: inline-block;
-	margin-top: 310px;
-	margin-left: 56px;
-	text-align: center;
+	margin-top: 180px;
+	margin-left: 25%;
+	margin-right: 25%;	
 }
 .info h2{
 	font-size: 2.3em;
+	font-weight: bold;
 	margin-top: -12px;
-	font-family:"Arial Black", Helvetica, sans-serif;
-
+	font-family:"Arial", Helvetica, sans-serif;
 }
 .info h1{
+	font-weight: bold;
 	font-size: 6.3em;
-    font-family:"Arial Black", Helvetica, sans-serif;
+    font-family:"Arial", Helvetica, sans-serif;
 }
 .info h4{
-	
+	font-weight: bold;
 	font-size: 1.6em;
-	font-family: "Arial Black", Helvetica, sans-serif;
+	font-family: "Arial", Helvetica, sans-serif;
 }
 .soon{
 	margin: 15% 0 0 0;
@@ -57,12 +66,8 @@
 	font-weight: bold;
 	font-family: "Comic Sans MS", sans-serif;
 } */
-.plist h4, .plist p{
-	display:inline-block;
-}
-
 .plist{
-	text-align: center;
+	/* text-align: center; */
 	/* margin-left: 25%; */
 	margin-bottom: -10px;
 }
@@ -85,14 +90,7 @@
 	animation-iteration-count: 1;
 }
 
-.containerr {
-	margin: 0;
-	width: 100%;
-	min-height: 2000px;
-	background: linear-gradient(-45deg, #d5ffd9, #b9ecff, #b9ffe4, #b2fff5);
-	background-size: 400% 400%;
-	animation: gradientBG 15s ease infinite;
-}
+
 @keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
@@ -111,9 +109,6 @@
 	.swap-on-hover img {
 		left: 50%;
 		margin-left: -190px;
-	}
-	.containerr{
-		min-height: 1300px;
 	}
 	.plist{
 		margin-left: 0;
