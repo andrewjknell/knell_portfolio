@@ -28,31 +28,44 @@
 	/* text-align: center; */
 	width: 100%;
 	min-height: 1300px;
-	background: linear-gradient(-45deg, #fdfdf4, #f5f4e3, #fffff3, #feffe7);
+	background-color: aliceblue;
+	/* background: linear-gradient(-45deg, #fdfdf4, #f5f4e3, #fffff3, #feffe7); */
 	/* background-size: 400% 400%; */
 	/* animation: gradientBG 15s ease infinite; */
 }
-
+.center{
+	
+}
 .info{
 	color: rgb(0, 0, 0);
-	/* width: 669px; */
-	display: inline-block;
-	margin-top: 180px;
-	margin-left: 25%;
-	margin-right: 25%;	
+	background-color: aliceblue;
+	width: 100%;
+	/* display: inline-block; */
+}
+.leftalign{
+	width: 60%;
+
+	/* text-align: center; */
 }
 .info h2{
+	width: 60%;
+
+	/* text-align: center; */
 	font-size: 2.3em;
 	font-weight: bold;
 	margin-top: -12px;
 	font-family:"Arial", Helvetica, sans-serif;
 }
 .info h1{
+	width: 60%;
+
+	/* text-align: center; */
 	font-weight: bold;
 	font-size: 6.3em;
     font-family:"Arial", Helvetica, sans-serif;
 }
 .info h4{
+	width: 60%;
 	font-weight: bold;
 	font-size: 1.6em;
 	font-family: "Arial", Helvetica, sans-serif;
@@ -61,14 +74,9 @@
 	margin: 15% 0 0 0;
 	text-align: center;
 }
-/* .plist p{
-	font-size: 20px;
-	font-weight: bold;
-	font-family: "Comic Sans MS", sans-serif;
-} */
+
 .plist{
-	/* text-align: center; */
-	/* margin-left: 25%; */
+
 	margin-bottom: -10px;
 }
 .plist:hover{
@@ -102,7 +110,70 @@
 		background-position: 0% 50%;
 	}
 }
-
+@-webkit-keyframes swing{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -138,3 +209,65 @@
 		font-family: "Arial Black", Helvetica, sans-serif;
 	}
   }
+
+  #footer {
+    width:100%;
+    height:120px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+    background-image: url("https://www.pacifica-montessori.com/wp-content/uploads/2018/03/footerwaves.png");
+}
+.linkedin a{
+	color: rgb(0, 8, 232);
+}
+.instagram a{
+	color: rgb(255, 111, 34);
+}
+.github a{
+	color: rgb(0, 0, 0);
+}
+.gmail a{
+	color: rgb(255, 255, 255);
+}
+.icons{
+    margin-top: 55px;
+    text-align: center;
+}
+section #services {
+	transform: translatez(0);
+  }
+  section #services li {
+	/* width: 180px;
+    height: 180px; */
+    width: 6%;
+	display:inline-block;
+	/* margin-right:px; */
+	list-style: none;
+  }
+  section #services li div {
+	width: 70px;
+	height: 70px;
+	font-size: 2.8em;
+	text-align: center;
+	line-height: 70px;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.5s ease;
+  }
+  section #services li div:hover {
+	transform: rotate(360deg);
+	border-radius: 100px;
+  }
+
+@media screen and (max-width: 480px){
+    section #services li{
+        width: 70px;
+        margin-left: 0;
+    }
+    #services{
+      padding: 0;
+    }
+}
