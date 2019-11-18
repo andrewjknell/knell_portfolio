@@ -1,10 +1,103 @@
-/* .containn{
+body, html{
+    margin: 0 auto;
+    padding: 0;
+    font-weight: 800;
+    background-color: rgb(223, 238, 251);
+  }
+  
+  body{
+    text-align: center;
+    background: #000;
+    font-family: cursive;
+  }
+  
+  svg {
+      display: block;
+      font: 10.5em 'Monoton';
+      width: 960px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  .content{
+    text-align: center;
+  }
+  .links{
+    display: inline-block;
+    width: 50%;
+    font-size: 4.5em;
+  }
+  .alinks{
+    border: none;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+  h1{
+    text-align: center;
+    font: 2em 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #000000;
+    opacity: .6;
+  }
+  
+  a{
+     display: inline-block;
+     text-transform: uppercase;
+     font: 1em 'Roboto';
+     font-weight: 500;
+     border: 1.5px solid #000000;
+     border-radius: 4px;
+     color: #000000;
+     margin-top: 10%;
+     padding: 8px 14px;
+     text-decoration: none;
+     opacity: .6;
+     margin-bottom: 2%;
+  }
+  
+  .text {
+      fill: none;
+      stroke: rgb(255, 255, 255);
+      stroke-dasharray: 8% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 1%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text:nth-child(1){
+      stroke: #1c334d;
+      animation-delay: -1;
+  }
+  
+  .text:nth-child(2){
+      stroke: #315b2c;
+      animation-delay: -2s;
+  }
+  
+  .text:nth-child(3){
+      stroke: #2f8f7f;
+      animation-delay: -3s;
+  }
+  
+  .text:nth-child(4){
+      stroke: #2f8f7f;
+      animation-delay: -4s;
+  }
+  
+  .text:nth-child(5){
+      stroke: #17adda;
+      animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+      100% {
+      stroke-dashoffset: -30%;
+    }
+  }
 
-    background: -webkit-linear-gradient(70deg, #ffffc5fa  30%, rgba(240, 243, 70, 0.096) 30%), -webkit-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
-    background: -o-linear-gradient(70deg, #ffffc5fa  30%, rgba(240, 243, 70, 0.096) 30%), -o-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
-    background: -moz-linear-gradient(70deg, #ffffc5fa  30%, rgba(240, 243, 70, 0.096) 30%), -moz-linear-gradient(30deg, #fffed6 60%, #fffdea 60%);
-    background: linear-gradient(47deg, #fa7e7efa  30%, rgba(240, 243, 70, 0) 30%), linear-gradient(20deg, #f6f58a 60%, #82ff7e 60%);
-    min-height: 100vh;
-    min-width: 100%;
-} */
-/* faf3dd */
+  @media screen and (max-width: 480px){
+    svg{
+        width: 400px;
+        font-size: 17em;
+    }
+}
+
