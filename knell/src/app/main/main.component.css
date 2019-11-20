@@ -38,11 +38,21 @@
 }
 
 #projects{
-	padding:0 80px 0 80px;
+	padding:20px 110px 0 110px;
 	background-color: rgb(213, 253, 253);
 }
 #projects h1{
+	font-family:"Arial", Helvetica, sans-serif;
+	font-weight: bold;
 	font-size: 4rem;
+	width: 20%;
+	margin-bottom: 25px;
+}
+#projects h1:hover{
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
 }
 .carousel{
 	width: 680px;
@@ -58,7 +68,7 @@
 #left{
 	width: 80px;
 	height: 310px;
-	margin-top: -315px;
+	/* margin-top: -315px; */
 	background:rgba(187, 241, 255, 0.301);
 	position: absolute;
 	border: none;
@@ -71,7 +81,7 @@
 	display: block;
 	width: 80px;
 	height: 310px;
-	margin-top: -315px;
+	/* margin-top: -315px; */
 	margin-left: 600px;
 	background:rgba(187, 241, 255, 0.301);
 	border: none;
@@ -80,34 +90,107 @@
 	font-weight: bold;
 	font-size: 1.7rem;
 }
+#leftRec{
+	width: 80px;
+	height: 310px;
+	background:rgba(187, 241, 255, 0.301);
+	position: absolute;
+	right: 0;
+	margin-right: 710px;
+	border: none;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.7rem;
+	display: block;
+}
+#rightRec{
+	display: block;
+	width: 80px;
+	height: 310px;
+	margin-right: 110px;
+	background:rgba(187, 241, 255, 0.301);
+	border: none;
+	position: absolute;
+	right: 0;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.7rem;
+}
 .projectOne{
-	margin-bottom: 50px;
+	display: flex;
+	margin-bottom: 90px;
 }
 #controlOne{
 	display: inline-block;
 }
 .honorable{
+	font-size: 1.1rem;
 	margin-left: 30px;
 	vertical-align: top;
 	display: inline-block;
+	flex: 1;
 }
-
+.githubb{
+	display: flex;
+}
+.githubb a{
+	color: rgb(0, 0, 0);
+	font-size: 3rem;
+	width: 50px;
+}
+.githubb a:hover{
+	color: rgb(29, 82, 255);
+}
+.githubb h5{
+	margin-top: 33px;
+}
 #controlTwo{
 	display: inline-block;
 }
 .projectTwo{
+	display: flex;
 	padding-bottom: 50px;
 }
+.otp{
+	margin-right: 30px;
+	vertical-align: top;
+	display: inline-block;
+	flex: 1;
+	font-size: 1.1rem;
+}
 #about{
-	padding:100px 80px 0 80px;
-	background-color: rgb(199, 255, 241);
-	height: 500px;
+	padding:100px 160px 0 160px;
+	background-color: rgb(255, 247, 199);
+	min-height: 500px;
+	display: flex;
+	/* border-bottom: solid black 1px; */
 }
 .aboutMe{
-	width: 70%;
-	margin-left: 315px;
+	margin-left: 320px;
+	font-size: 1.1rem;
 }
-
+.swap-on-hover {
+	position: relative;	
+	max-width: 400px;
+  }
+  .swap-on-hover img {
+	position: absolute;
+	top:0;
+	left:0;
+	border-radius: 150px;
+	overflow: hidden;
+	height: 290px;
+	width: 290px;
+	}
+	.swap-on-hover .swap-on-hover__front-image {
+	  z-index: 9999;
+	  transition: opacity .3s linear;
+	  cursor: pointer;
+	}
+	
+	.swap-on-hover:hover > .swap-on-hover__front-image{
+	  opacity: 0;
+	} 
 .plist{
 	margin-top: 10px;
 	width: 10%;
@@ -138,7 +221,7 @@
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
-    position: fixed;
+	position: fixed;
     bottom: 0pt;
     left: 0pt;
     background-image: url("https://www.pacifica-montessori.com/wp-content/uploads/2018/03/footerwaves.png");
@@ -147,7 +230,7 @@
 	text-align: center;
 	padding-top: 150px;
 	padding-bottom: 90px;
-	background-color: rgb(255, 244, 196);
+	background-color: rgb(196, 255, 229);
 }
 .linkedin a{
 	color: rgb(0, 8, 232);
@@ -303,25 +386,4 @@ section #services {
     }
 }
 
-.swap-on-hover {
-	position: relative;	
-	max-width: 400px;
-  }
-  .swap-on-hover img {
-	position: absolute;
-	top:0;
-	left:0;
-	border-radius: 150px;
-	overflow: hidden;
-	height: 290px;
-	width: 290px;
-	}
-	.swap-on-hover .swap-on-hover__front-image {
-	  z-index: 9999;
-	  transition: opacity .3s linear;
-	  cursor: pointer;
-	}
-	
-	.swap-on-hover:hover > .swap-on-hover__front-image{
-	  opacity: 0;
-	} 
+

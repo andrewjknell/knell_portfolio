@@ -36,22 +36,54 @@
                 <img id="two" src="assets/imgs/2.PNG" alt="">
                 <img id="three" src="assets/imgs/3.PNG" alt="">
             </div>
-            <button id="left" (click)="goLeft()"><<</button> 
-            <button id="right" (click)="goRight()">>></button>
+            <button id="left" (click)="goLeft()">
+                <<</button> <button id="right" (click)="goRight()">>>
+            </button>
             <div class="honorable">
                 <h2>Honorable Mention</h2>
+                <li>This web application was build as an easy way to store
+                    suggestions and recommendations given for dining, activities, ect.. while also
+                    being able to see each item on a map just by adding to your list.
+
+                </li>
+                <li>It was built using Django and Python with a SQLite database. We implemented
+                    an API(mapbox) that is used to keep track of your recommendations that are stored
+                    on a map so you can see where you are and if there is anything you've saved in
+                    your area.
+                </li>
+
+                <div class="githubb">
+                    <a href="https://github.com/andrewjknell/honorable_mention2" title="view code" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <h5>view code</h5>
+                </div>
             </div>
         </div>
         <div class="projectTwo">
+            <div class="otp">
+                <h2>On the Spot Recipes</h2>
+                <li>This is a fun web application built to help you think of different desserts
+                    you can bake while using ingrediants around your own kitchen. You simply check the different
+                    ingrediants
+                    you wish to use and send!
+                </li>
+                <li>It was built with an Angular front end with Express.js running the server. It uses RecipePuppy
+                    to make API calls and find the different recipes you can create and returing 10 at a time.</li>
+                <div class="githubb">
+                    <a href="https://github.com/andrewjknell/just_a_pinch" title="view code" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <h5>view code</h5>
+                </div>
+            </div>
             <div id="controlTwo" class="carousel">
                 <img id="one" src="assets/imgs/recipe1.PNG" alt="">
                 <img id="two" src="assets/imgs/reciple2.PNG" alt="">
             </div>
-            <button id="left" (click)="goLeft2()"><<</button> 
-            <button id="right" (click)="goRight2()">>></button>
-            <div class="honorable">
-                <h2>On the Spot Recipes</h2>
-            </div>
+            <button id="leftRec" (click)="goLeft2()">
+                <<</button> <button id="rightRec" (click)="goRight2()">>>
+            </button>
         </div>
     </div>
     <div id="about">
@@ -61,12 +93,16 @@
         </figure>
         <div class="aboutMe">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem
-                    esse architecto consequuntur nostrum animi. Tempora, corporis ipsa obcaecati
-                    hic placeat aliquid sint, harum numquam dolore aliquam, illum velit perspiciatis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem
-                    esse architecto consequuntur nostrum animi. Tempora, corporis ipsa obcaecati
-                    hic placeat aliquid sint, harum numquam dolore aliquam, illum velit perspiciatis?</p>
+            <p>
+                
+            </p>
+            <p>When i'm not on my computer working on a project or tinkering
+                with some code you will most likely find me out surfing. If I'm not
+                in the water you will catch me on my bike dirt jumping or riding the
+                trails up behind UCSC. I listen to music everyday of my life and enjoy playing
+                guitar, drums and piano. I like solving problems, creating and learning new things
+                everyday.
+            </p>
         </div>
     </div>
 
