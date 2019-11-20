@@ -1,33 +1,77 @@
 <div class="containerr">
-
-    <!-- <figure class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="assets/imgs/camp.jpg" />
-            <img class="swap-on-hover__back-image" src="assets/imgs/suuurf.JPG.png" />
-        </figure> -->
-
-    <div class="header">
-        <h1>hi, i'm andrew</h1>
-        <h2>full-stack web developer</h2>
+    <div class="sidenav">
+        <a [routerLink]="" (click)="scrollTo('head')">
+            <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+        <a [routerLink]="" (click)="scrollTo('projects')">
+            <i class="fa fa-code" aria-hidden="true"></i>
+        </a>
+        <a [routerLink]="" (click)="scrollTo('about')">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </a>
+        <a [routerLink]="" (click)="scrollTo('contact')">
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div id="head" class="header">
+        <h1>hi, i'm andrew.</h1>
         <div class="plist">
-            <h4> explorer. </h4>
+            <h4> developer. </h4>
+        </div>
+        <div class="plist">
+            <h4> creator. </h4>
         </div>
         <div class="plist">
             <h4> surfer. </h4>
         </div>
         <div class="plist">
-            <h4> creator. </h4>
+            <h4> explorer. </h4>
         </div>
     </div>
-    <div class="summary">
-        
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="projectOne">
+            <div id="controlOne" class="carousel">
+                <img id="one" src="assets/imgs/1.PNG" alt="">
+                <img id="two" src="assets/imgs/2.PNG" alt="">
+                <img id="three" src="assets/imgs/3.PNG" alt="">
+            </div>
+            <button id="left" (click)="goLeft()"><<</button> 
+            <button id="right" (click)="goRight()">>></button>
+            <div class="honorable">
+                <h2>Honorable Mention</h2>
+            </div>
+        </div>
+        <div class="projectTwo">
+            <div id="controlTwo" class="carousel">
+                <img id="one" src="assets/imgs/recipe1.PNG" alt="">
+                <img id="two" src="assets/imgs/reciple2.PNG" alt="">
+            </div>
+            <button id="left" (click)="goLeft2()"><<</button> 
+            <button id="right" (click)="goRight2()">>></button>
+            <div class="honorable">
+                <h2>On the Spot Recipes</h2>
+            </div>
+        </div>
     </div>
-    <button (click)="scrollTo('end')">end</button>
-    <div id="end">
-        hello im andrew
+    <div id="about">
+        <figure class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="assets/imgs/camp.jpg" />
+            <img class="swap-on-hover__back-image" src="assets/imgs/suuurf.JPG.png" />
+        </figure>
+        <div class="aboutMe">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem
+                    esse architecto consequuntur nostrum animi. Tempora, corporis ipsa obcaecati
+                    hic placeat aliquid sint, harum numquam dolore aliquam, illum velit perspiciatis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem
+                    esse architecto consequuntur nostrum animi. Tempora, corporis ipsa obcaecati
+                    hic placeat aliquid sint, harum numquam dolore aliquam, illum velit perspiciatis?</p>
+        </div>
     </div>
-</div>
-<div id="footer">
-    <div class="icons">
+
+    <div id="contact">
+        <h1></h1>
         <section>
             <ul id="services">
                 <li>
@@ -61,5 +105,7 @@
             </ul>
         </section>
     </div>
-    <router-outlet></router-outlet>
 </div>
+<div id="footer">
+</div>
+<router-outlet></router-outlet>

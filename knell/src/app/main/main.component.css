@@ -1,49 +1,117 @@
 
 .containerr {
 	width: 100%;
-	height: 100vh;
 	background-color: rgb(253, 253, 253);
-	text-align: center;
-}
-.summary{
-	background-color: rgb(240, 255, 255);
-	height: 300px;
 }
 .header{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: aliceblue;
+	text-align: center;
+	padding-top: 15%;
+	padding-bottom:22%;
+	background-color: rgb(214, 236, 255);
 	color: rgb(0, 0, 0);
-}
-.header h2{
-	width: 98%;
-	font-size: 2.3em;
-	font-weight: bold;
-	margin-top: -12px;
-	font-family:"Arial", Helvetica, sans-serif;
 }
 .header h1{
 	width: 98%;
 	font-weight: bold;
-	font-size: 6.3em;
+	font-size: 5.1rem;
     font-family:"Arial", Helvetica, sans-serif;
 }
-
 .header h4{
 	width: 98%;
 	font-weight: bold;
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	font-family: "Arial", Helvetica, sans-serif;
 }
-
-.soon{
-	margin: 15% 0 0 0;
+.sidenav{
 	text-align: center;
+	margin-top: 3px;
+	padding: 10px 0 10px 0;
+	position: fixed;
+	right: 0;
+	width: 80px;
+	font-size: 2.7em;
+	border-radius: 10px;
+	background-color: rgb(65, 65, 65);
 }
-#end{
-	margin-top: 1500px;
+.sidenav i{
+	width: 100%;
 }
+
+#projects{
+	padding:0 80px 0 80px;
+	background-color: rgb(213, 253, 253);
+}
+#projects h1{
+	font-size: 4rem;
+}
+.carousel{
+	width: 680px;
+	overflow: hidden;
+	white-space: nowrap;
+	height: 310px;
+}
+.carousel img{
+	width: 680px;
+	display: inline-block;
+	height: 310px;
+}
+#left{
+	width: 80px;
+	height: 310px;
+	margin-top: -315px;
+	background:rgba(187, 241, 255, 0.301);
+	position: absolute;
+	border: none;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.7rem;
+	display: block;
+}
+#right{
+	display: block;
+	width: 80px;
+	height: 310px;
+	margin-top: -315px;
+	margin-left: 600px;
+	background:rgba(187, 241, 255, 0.301);
+	border: none;
+	position: absolute;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+.projectOne{
+	margin-bottom: 50px;
+}
+#controlOne{
+	display: inline-block;
+}
+.honorable{
+	margin-left: 30px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+#controlTwo{
+	display: inline-block;
+}
+.projectTwo{
+	padding-bottom: 50px;
+}
+#about{
+	padding:100px 80px 0 80px;
+	background-color: rgb(199, 255, 241);
+	height: 500px;
+}
+.aboutMe{
+	width: 70%;
+	margin-left: 315px;
+}
+
 .plist{
+	margin-top: 10px;
+	width: 10%;
+	display: inline-block;
 	margin-bottom: -10px;
 }
 .plist h4:hover{
@@ -64,11 +132,9 @@
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
 }
-
-
 #footer {
     width:100%;
-    height:120px;
+    height:80px;
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0% 0%;
@@ -76,6 +142,12 @@
     bottom: 0pt;
     left: 0pt;
     background-image: url("https://www.pacifica-montessori.com/wp-content/uploads/2018/03/footerwaves.png");
+}
+#contact{
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 90px;
+	background-color: rgb(255, 244, 196);
 }
 .linkedin a{
 	color: rgb(0, 8, 232);
@@ -89,25 +161,18 @@
 .gmail a{
 	color: rgb(255, 255, 255);
 }
-.icons{
-    margin-top: 55px;
-    text-align: center;
-}
 section #services {
 	transform: translatez(0);
   }
   section #services li {
-	/* width: 180px;
-    height: 180px; */
-    width: 8%;
+    width: 9%;
 	display:inline-block;
-	/* margin-right:px; */
 	list-style: none;
   }
   section #services li div {
 	width: 70px;
 	height: 70px;
-	font-size: 2.8em;
+	font-size: 4rem;
 	text-align: center;
 	line-height: 70px;
 	background-color: rgba(255, 255, 255, 0);
@@ -238,29 +303,18 @@ section #services {
     }
 }
 
-
-
-
-
-
-/* html{
-	background-color: black;
-}
 .swap-on-hover {
 	position: relative;	
 	max-width: 400px;
-
   }
   .swap-on-hover img {
 	position: absolute;
 	top:0;
 	left:0;
-	margin-top:10px;
-	margin-left: 10px;
 	border-radius: 150px;
 	overflow: hidden;
-	height: 270px;
-	width: 270px;
+	height: 290px;
+	width: 290px;
 	}
 	.swap-on-hover .swap-on-hover__front-image {
 	  z-index: 9999;
@@ -270,4 +324,4 @@ section #services {
 	
 	.swap-on-hover:hover > .swap-on-hover__front-image{
 	  opacity: 0;
-	} */
+	} 
