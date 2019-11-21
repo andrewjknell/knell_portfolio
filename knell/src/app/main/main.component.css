@@ -5,9 +5,9 @@
 }
 .header{
 	text-align: center;
-	padding-top: 15%;
+	padding-top: 19%;
 	padding-bottom:22%;
-	background-color: rgb(214, 236, 255);
+	background-color: rgb(176, 216, 252);
 	color: rgb(0, 0, 0);
 }
 .header h1{
@@ -17,10 +17,16 @@
     font-family:"Arial", Helvetica, sans-serif;
 }
 .header h4{
-	width: 98%;
+	width: 95%;
 	font-weight: bold;
 	font-size: 1.6rem;
 	font-family: "Arial", Helvetica, sans-serif;
+}
+.plist{
+	margin-top: 10px;
+	width: 13%;
+	display: inline-block;
+	margin-bottom: -10px;
 }
 .sidenav{
 	text-align: center;
@@ -28,8 +34,8 @@
 	padding: 10px 0 10px 0;
 	position: fixed;
 	right: 0;
-	width: 80px;
-	font-size: 2.7em;
+	width: 70px;
+	font-size: 2.7rem;
 	border-radius: 10px;
 	background-color: rgb(65, 65, 65);
 }
@@ -39,7 +45,7 @@
 
 #projects{
 	padding:20px 110px 0 110px;
-	background-color: rgb(213, 253, 253);
+	background-color: rgb(182, 252, 252);
 }
 #projects h1{
 	font-family:"Arial", Helvetica, sans-serif;
@@ -149,6 +155,7 @@
 }
 .projectTwo{
 	display: flex;
+	flex-direction: row-reverse;
 	padding-bottom: 50px;
 }
 .otp{
@@ -163,7 +170,6 @@
 	background-color: rgb(255, 247, 199);
 	min-height: 500px;
 	display: flex;
-	/* border-bottom: solid black 1px; */
 }
 .aboutMe{
 	margin-left: 320px;
@@ -191,12 +197,7 @@
 	.swap-on-hover:hover > .swap-on-hover__front-image{
 	  opacity: 0;
 	} 
-.plist{
-	margin-top: 10px;
-	width: 10%;
-	display: inline-block;
-	margin-bottom: -10px;
-}
+
 .plist h4:hover{
 	-webkit-animation: swing 1s ease;
 	animation: swing 1s ease;
@@ -228,9 +229,9 @@
 }
 #contact{
 	text-align: center;
-	padding-top: 150px;
+	padding-top: 60px;
 	padding-bottom: 90px;
-	background-color: rgb(196, 255, 229);
+	background-color: rgb(110, 255, 192);
 }
 .linkedin a{
 	color: rgb(0, 8, 232);
@@ -341,49 +342,183 @@ section #services {
         transform: translateX(0);
     }
 }
+#hideimg{
+	display: none;
+}
 
 
 @media screen and (max-width: 480px) {
-	.swap-on-hover img {
-		left: 50%;
-		margin-left: -190px;
-	}
 	.plist{
+		width: 45%;
+    }
+    .sidenav{
+        display: none;
+    }
+	#controlOne{
+		display: none;
+	}
+	#controlTwo{
+		display: none;
+	}
+	#left{
+		display: none;
+	}
+	#right{
+		display: none;
+	}
+	#leftRec{
+		display: none;
+	}
+	#rightRec{
+		display: none;
+	}
+	section #services li {
+        width: 40%;
+        margin-bottom: 20px;
+	}
+	#contact{
+		padding-bottom: 100px;
+	}
+	#projects{
+		padding: 20px 25px 0 25px;
+	}
+	.otp{
+		margin-right: 0;
+	}
+	.honorable{
 		margin-left: 0;
 	}
-	.header{
-		margin-left: 0;
-
+	.projectOne{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
 	}
-	.soon{
-		margin: 0 0 0 0;
+	.projectTwo{
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutMe{
+		margin-left: 0;
+		margin-top: 300px;
+	}
+	#about{
+		padding: 20px 60px 0 50px ;
 		text-align: center;
-		font-size: 1.3em;
 	}
-	.header h2{
-		font-size: 1.2em;
-		margin-top: -12px;
-		font-family:"Arial Black", Helvetica, sans-serif;
-	
+	#projects h1{
+		font-size: 46px;
 	}
-	.header h1{
-		font-size: 2.5em;
-		font-family:"Arial Black", Helvetica, sans-serif;
+	#hideimg{
+		display: block;
+		width: 100%;
 	}
-	.header h4{
-		font-size: 1em;
-		font-family: "Arial Black", Helvetica, sans-serif;
+	#hideimg img{
+		display: flex;
+		width: 320px;
 	}
   }
+@media screen and (min-width:480px) and (max-width:810px){
+	.plist{
+		width: 19%;
+	}
+	#controlOne{
+		display: none;
+	}
+	#controlTwo{
+		display: none;
+	}
+	#left{
+		display: none;
+	}
+	#right{
+		display: none;
+	}
+	#leftRec{
+		display: none;
+	}
+	#rightRec{
+		display: none;
+	}
+	section #services li {
+		width: 17%;
+	}
+	#projects{
+		padding: 20px 25px 0 25px;
+	}
+	.otp{
+		margin-right: 0;
+	}
+	.honorable{
+		margin-left: 0;
+	}
+	.projectOne{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+	.projectTwo{
+		display: flex;
+		flex-direction: column;
+	}
+	.aboutMe{
+		margin-left: 0;
+		margin-top: 300px;
+	}
+	#about{
+		padding: 20px 60px 0 60px ;
+	}
+	#projects h1{
+		font-size: 46px;
+	}
+	#hideimg{
+		display: block;
+		width: 100%;
+	}
+	#hideimg img{
+		display: flex;
+		width: 550px;
+	}
 
-@media screen and (max-width: 480px){
-    section #services li{
-        width: 70px;
-        margin-left: 0;
-    }
-    #services{
-      padding: 0;
-    }
+}
+@media screen and (min-width:810px) and (max-width:1200px){
+	.plist{
+		width: 16%;
+	}
+	#projects{
+		padding: 20px 55px 0 55px;
+	}
+	.projectOne{
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.projectTwo{
+		flex-direction: column;
+	}
+	#rightRec{
+		background:rgba(143, 233, 255, 0.301);
+		left: 0;
+		margin-left: 640px;
+	 }
+	#leftRec{
+		background:rgba(143, 233, 255, 0.301);
+		left: 0;
+	     margin-left: 38px;
+	}
+	#about{
+		padding:90px 60px 0 60px;
+	}
+	section #services li {
+		width: 14%;
+	}
+	.otp{
+		margin-top: 10px;
+		margin-right: 0;
+	}
+	.honorable{
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
 }
 
 
